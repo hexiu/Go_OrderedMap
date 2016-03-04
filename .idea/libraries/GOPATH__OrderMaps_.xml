@@ -1,0 +1,81 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;OrderMaps&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/learn1" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/.idea" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/beego" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/qiniupkg.com" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/golang.org" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/qiniupkg.com" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/main.go.back" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/golang.org" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/other" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <excluded>
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/astaxie/beego/.git" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/astaxie/beego/.git" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/Unknwon/com/.git" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/qiniupkg.com/api.v7/.git" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/qiniupkg.com/x/.git" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/lib/pq/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/howeyc/fsnotify/.git" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/smartystreets/assertions/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/jtolds/gls/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/go-xorm/xorm/.git" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/Unknwon/com/testdata" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/go-xorm/xorm/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/smartystreets/assertions/internal/oglemock/generate/testdata" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/other/send_mail/.idea" />
+      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/smartystreets/assertions/internal/oglemock/createmock/testdata" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/other/go_web/.idea" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/qiniupkg.com/x/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/Unknwon/com/testdata" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/nsf/gocode/_gccgo" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/nsf/gocode/_goremote" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/astaxie/bee/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/go-sql-driver/mysql/.git" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/nsf/gocode/_testing" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/astaxie/bee/testdata" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/beego/bee/testdata" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/astaxie/beego/utils/testdata" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/nsf/gocode/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/Unknwon/com/.git" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/smartystreets/goconvey/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/.idea" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/mattn/go-sqlite3/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/other/test/.idea" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/jtolds/gls/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/smartystreets/goconvey/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/astaxie/beego/utils/testdata" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/nsf/gocode/.git" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/mattn/go-sqlite3/_example" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/howeyc/fsnotify/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/beego/bee/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/astaxie/bee/testdata" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/go-sql-driver/mysql/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/nsf/gocode/_testing" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/astaxie/bee/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/other/.idea" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/nsf/gocode/_goremote" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/nsf/gocode/_gccgo" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/smartystreets/assertions/internal/oglemock/createmock/testdata" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/qiniupkg.com/api.v7/.git" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/beego/.git" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/beego/bee/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/mattn/go-sqlite3/_example" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/smartystreets/assertions/internal/oglemock/generate/testdata" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/lib/pq/.git" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/beego/.idea" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/mattn/go-sqlite3/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/go-xorm/core/.git" />
+      <root url="file://$PROJECT_DIR$/../../learn_go/src/github.com/smartystreets/assertions/.git" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/beego/bee/testdata" />
+      <root url="file://$PROJECT_DIR$/../../go_projects/src/github.com/go-xorm/core/.git" />
+    </excluded>
+  </library>
+</component>

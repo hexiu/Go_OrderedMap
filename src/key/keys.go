@@ -1,4 +1,4 @@
-package Key
+package key
 
 import (
 	"reflect"
@@ -11,7 +11,7 @@ type myKeys struct {
 	elemType    reflect.Type
 }
 
-type keys interface {
+type Keys interface {
 	sort.Interface
 	Add(k interface{}) bool
 	Remove(k interface{}) bool
@@ -23,9 +23,11 @@ type keys interface {
 	CompareFunc() func(interface{}, interface{}) int8
 }
 
+
+/*
 func main() {
 	// This is init myKeys!
-	/*
+
 	   int64Keys:=&myKeys{
 	           container : make([]interface{},0)
 	           compareFunc func(e1 interface{},e2 interface{}) int8 {
@@ -41,10 +43,10 @@ func main() {
 	           },
 	           elemType : reflect.TypeOf(int64(1))
 	   }
-	*/
+
 
 }
-
+*/
 /*
 func NewMyKeys() {
         return &myKeys{
@@ -97,8 +99,24 @@ func (keys *myKeys) Add(k interface{}) bool {
 	return true
 }
 
-func Search(n int, f func(int) bool) int {
+func (keys *myKeys) Search(k interface{}) (index int, contains bool) {
+	if !keys.isAcceptableElem(k) {
+		return 0, false
+	}
+	index = sort.Search(keys.Len(), func(i int) bool { return keys.compareFunc(keys.container[i], k) >= 0 })
+	if index < keys.Len() && keys.container[index] == k {
+		contains = true
+	}
+	return
+}
 
+func (keys *myKeys) Remove(k interface{}) bool {
+	index, ok := keys.Search(k)
+	if ok {
+		keys.container = append(keys.container[0:index], keys.container[index+1:])
+		return true
+	}
+	return false
 }
 
 func (keys *myKeys) Clear() {
@@ -106,12 +124,45 @@ func (keys *myKeys) Clear() {
 }
 
 func (keys *myKeys) Get(index int) interface{} {
-	if index >= key.Len() {
+	if index >= keys.Len() {
 		return nil
 	}
 	return keys.container[index]
 }
 
 func (keys *myKeys) GetAll() []interface{} {
+	initialLen := len(keys.container)
+	snapshot := make([]interface{}, initialLen)
+	actualLen := 0
+	for _, keys := range keys.container {
+		if actualLen < initialLen {
+			snapshot[actualLen] = keys
+		} else {
+			snapshot = snapshot[:actualLen]
+		}
+		actualLen++
+	}
+	if actualLen < initialLen {
+		snapshot = snapshot[:actualLen]
+	}
+	return snapshot
+}
 
+func (keys *myKeys) ElemType() reflect.Type {
+	return keys.elemType
+}
+
+func (keys *myKeys) CompareFunc() (CompareFunction func(interface{}, interface{}) int8) {
+	return keys.compareFunc
+}
+
+// Create a New Keys Type .
+func NewKeys(compareFunc func(interface{}, interface{}) int8,
+	elemType reflect.Type) Keys {
+
+	return &myKeys{
+		container:   make([]interface{}, 0),
+		compareFunc: compareFunc,
+		elemType:    elemType,
+	}
 }
