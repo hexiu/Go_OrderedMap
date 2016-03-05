@@ -7,7 +7,7 @@ import (
 
 type myKeys struct {
 	container   []interface{}
-	compareFunc func(interface{}, interface{}) int8
+	compareFunc func(interface{}, interface{}) int
 	elemType    reflect.Type
 }
 
@@ -20,9 +20,8 @@ type Keys interface {
 	GetAll() []interface{}
 	Search(k interface{}) (index int, contains bool)
 	ElemType() reflect.Type
-	CompareFunc() func(interface{}, interface{}) int8
+	CompareFunc() func(interface{}, interface{}) int
 }
-
 
 /*
 func main() {
@@ -152,14 +151,13 @@ func (keys *myKeys) ElemType() reflect.Type {
 	return keys.elemType
 }
 
-func (keys *myKeys) CompareFunc() (CompareFunction func(interface{}, interface{}) int8) {
+func (keys *myKeys) CompareFunc() (CompareFunction func(interface{}, interface{}) int) {
 	return keys.compareFunc
 }
 
 // Create a New Keys Type .
-func NewKeys(compareFunc func(interface{}, interface{}) int8,
+func NewKeys(compareFunc func(interface{}, interface{}) int,
 	elemType reflect.Type) Keys {
-
 	return &myKeys{
 		container:   make([]interface{}, 0),
 		compareFunc: compareFunc,

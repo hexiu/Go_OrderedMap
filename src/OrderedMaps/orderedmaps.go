@@ -154,10 +154,11 @@ func (omap *myOrderedMap) TailMap(fromKey interface{}) OrderedMap {
 }
 
 func (omap *myOrderedMap) Keys() []interface{} {
-	index := 0
-	mapKeySlice := make([]interface{}, 0)
-	for index < omap.Len() {
-		mapKeySlice[index] = omap.keys.Get(index)
+	var index int = 0
+	mapKeySlice := make([]interface{}, omap.keys.Len())
+	for index < omap.keys.Len() {
+		t := omap.keys.Get(index)
+		mapKeySlice[index] = t
 		index++
 	}
 	if index == omap.Len() {
@@ -182,7 +183,7 @@ func (omap *myOrderedMap) Elems() []interface{} {
 }
 
 func (omap *myOrderedMap) ToMap() map[interface{}]interface{} {
-	newMap := make(map[interface{}]interface{})
+	newMap := make(map[interface{}]interface{}, 0)
 	valueSlice := omap.Elems()
 	for index, key := range omap.Keys() {
 		newMap[key] = valueSlice[index]
